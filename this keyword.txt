@@ -1,0 +1,4 @@
+/*global rulle applied unless keyword this is inside declared object*/
+/*using strict mode will amke this undefined inside a function*/
+/*when the keyword this is inside declared object its value will be closest parent*/
+/*keyword this ids defined when function is defined*/

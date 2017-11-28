@@ -1,0 +1,26 @@
+transform:translatex(100px);
+	translaytey(100px);
+	translate(100,200);
+	scale(2);
+	scalex(2);
+	scaley(3);
+	scale(2,3);
+
+transform-origin:0 0;
+//make top left corner as origin
+transform-origin:left;
+https://codepen.io/himanshu9419/pen/QqrGvG
+
+transform:rotate(45deg);
+
+transition->transition-duration
+	transition-property
+	transition-timing-function
+	transition-delay
+
+transition-duration: 2s,4s;
+transition-property: background-color,transform;
+
+transition:
+	transform 2s ease-in-out 1s,
+	background 2s linear;

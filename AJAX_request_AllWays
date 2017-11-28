@@ -1,0 +1,27 @@
+/XML http request
+var XHR = new XMLHttpRequest(); 
+XHR.onreadystatechange=function(){
+	console.log("Ready State is...",XHR.readyState);
+	if(XHR.readyState==4){
+		if(XHR.status==200){		
+			console.log(XHR.responseText);
+		}else{
+			console.log("there was problem");		
+		}
+	}
+}
+XHR.open("GET","https://api.github.com/zen");
+XHR.send();
+
+
+//fetch with option
+fetch(url,{
+	method:'POST',
+	body:'Data to send (always send after doing stringify)'
+}).then(()=>{}).catch(()=>{})
+
+//fetch example
+https://codepen.io/NaveenPen/pen/jGRrqx?editors=1010
+
+//all 4 way of making ajax fetch, xml, jquery, axios
+https://codepen.io/NaveenPen/pen/PJgjrR?editors=0010
